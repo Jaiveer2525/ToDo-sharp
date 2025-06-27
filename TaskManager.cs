@@ -53,6 +53,7 @@ class TaskManager
         public void Delete (int id) {
             tasks.RemoveAll(t => t.Id == id);
             WriteFile();
+            Console.WriteLine("Task Deleted Successfully");
         }
 
         private void ReadFile () {
